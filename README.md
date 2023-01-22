@@ -2,10 +2,11 @@
 
 ## WHY
 
-The HT1621 chip is in many old LCD appliances and can be directly addressed to write to old salvaged LCDs that are driven by this chip.
+The HT1621 chip is used in many consumer electronic appliances such as stereo units, microwaves, VCR's, and DVD players. The process of salvaging and the reuse of these parts can bring new life to what was destined to become landfill.
+
 Most Chips are from Holtek, but any 48-pin SSOP with 1621 in it's name is probably an HT.
-It has an integrated 2Khz/4Khz buzzer.
-You can buy the chips from [eBay for less than 20 cents a piece](goo.gl/qw28xx).
+
+An added bonus, the HT1621 chip has an integrated 2Khz/4Khz buzzer pins, howerver, not utilised in this case.
 
 ## WHAT
 
@@ -15,17 +16,14 @@ Only 3 or 4 lines are required for the interface between the host controller and
 The HT1621 contains a power down command to reduce power consumption.
 Operating voltage is 2.4 - 5.2 V.
 
-## HOW
+## CIRCUIT
 
-The idea is to reverse and reuse old salvaged LCDs that have the chip as a driver.
-
-## Sample
-
-Пример подключения ЖК-дисплея, извлеченного из старого [электросчетчика СЭБ-2А.05.2](/extras/schetchik.jpg):
-![пример подключения](/extras/photo.jpg)
+Bellow is a screenshot of the panel circuit, from the Panasonic SC-HC20 Service Manual.  
+![Panel Circuit](/extras/PanelCircuit.png)
 
 ## Links
 
-- Datasheet: <http://www.seeedstudio.com/document/HT1621.pdf>
+- Datasheet: <https://www.holtek.com/documents/10179/116711/HT1621v321.pdf>
 - [Enumerating LCD segments with OpenCV for reverse-engineering](https://eleif.net/lcd-segmentation.html)
 - Original source code and idea: <https://macduino.blogspot.com/2015/02/HT1621.html>
+- Fork from https://github.com/ipanin/ht1621ex

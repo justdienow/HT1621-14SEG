@@ -1,0 +1,21 @@
+These notes were taken when the panel was undergoing reverse engineering.
+
+https://en.wikipedia.org/wiki/Fourteen-segment_display
+Follow 14 segment format.
+
+Folder Icon = 0000 0000 0000 0001 = 1     - Colon, LOOP, PGM, RND, 1TR, 1ALBUM, DAB
+Segment F   = 0000 0000 0000 0010 = 2     - *
+Segment E   = 0000 0000 0000 0100 = 4     - *
+Note Icon   = 0000 0000 0000 1000 = 8     - Period, MONO, RDS, SLEEP, ()PLAY, Triangle, USB
+Segment A   = 0000 0000 0001 0000 = 16    - *
+Segment H   = 0000 0000 0010 0000 = 32    - 
+Segment G1  = 0000 0000 0100 0000 = 64    -
+Segment K   = 0000 0000 1000 0000 = 128   -
+Segment J   = 0000 0001 0000 0000 = 256   -
+Segment I   = 0000 0010 0000 0000 = 512   -
+Segment L   = 0000 0100 0000 0000 = 1024  -
+Segment D   = 0000 1000 0000 0000 = 2048  - * 
+Segment B   = 0001 0000 0000 0000 = 4096  - *
+Segment G2  = 0010 0000 0000 0000 = 8192  - 
+Segment C   = 0100 0000 0000 0000 = 16384 - *
+Segment M   = 1000 0000 0000 0000 = 32768 -

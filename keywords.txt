@@ -1,0 +1,66 @@
+#######################################
+# Syntax Coloring Map For HT1621-14SEG
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+MyDisplay			KEYWORD1
+LiquidCrystal14S 	KEYWORD1
+ILcdDisplay			KEYWORD1
+HT1621 				KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin				KEYWORD2
+clear 				KEYWORD2
+noDisplay			KEYWORD2
+display 			KEYWORD2
+read				KEYWORD2
+home				KEYWORD2
+scrollDisplayLeft	KEYWORD2
+scrollDisplayRight	KEYWORD2
+noAutoscroll		KEYWORD2
+noAutoscroll		KEYWORD2
+setCursor			KEYWORD2
+writeBitsReverse	KEYWORD2
+readBits			KEYWORD2
+sendCommand			KEYWORD2
+write				KEYWORD2
+writeArray			KEYWORD2
+read				KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+COMMAND_MODE			LITERAL1
+READ_MODE 				LITERAL1
+WRITE_MODE 				LITERAL1
+READ_MODIFY_WRITE_MODE	LITERAL1
+SPECIAL_MODE			LITERAL1
+SYS_DIS					LITERAL1
+SYS_EN					LITERAL1
+LCD_OFF					LITERAL1
+LCD_ON					LITERAL1
+TIMER_DIS				LITERAL1
+WDT_DIS					LITERAL1
+TIMER_EN				LITERAL1
+WDT_EN					LITERAL1
+CLR_TIMER 				LITERAL1
+CLR_WDT					LITERAL1
+TONE_OFF				LITERAL1
+TONE_ON					LITERAL1
+TONE2K					LITERAL1
+TONE4K					LITERAL1
+RC256K					LITERAL1
+XTAL32K					LITERAL1
+EXT256K					LITERAL1
+BIAS_HALF_2_COM			LITERAL1
+BIAS_HALF_3_COM			LITERAL1
+BIAS_HALF_4_COM			LITERAL1
+BIAS_THIRD_2_COM 		LITERAL1
+BIAS_THIRD_3_COM 		LITERAL1
+BIAS_THIRD_4_COM 		LITERAL1

@@ -13,11 +13,11 @@
  *
  * \section install Installing the library
  * Go into the directory of Arduino's local library (look into the IDE preferences if you don't know where it is). Create a
- * directory named 'LiquidCrystal7S' and copy all the files and the directories that you have found in the zip file.
+ * directory named 'LiquidCrystal14S' and copy all the files and the directories that you have found in the zip file.
  */
 
 /**
- * \file LiquidCrystal7S.h
+ * \file LiquidCrystal14S.h
  * \brief An adaptation of LiquidCrystal library to deal with 7 segments LCD based on HT1621 chipset.
  * \author Enrico Formenti
  * \copyright BSD license, check the License page on the blog for more information. All this text must be
@@ -26,17 +26,17 @@
  *  See macduino.blogspot.com for more details.
  */
 
-#ifndef LiquidCrystal7S_h
-#define LiquidCrystal7S_h
+#ifndef LiquidCrystal14S_h
+#define LiquidCrystal14S_h
 
 #include <Print.h>
 #include "ILcdDisplay.h"
 
-class LiquidCrystal7S : public Print {
+class LiquidCrystal14S : public Print {
 public:
 
     /// @param cols Number of display columns
-    explicit LiquidCrystal7S(ILcdDisplay& display, uint8_t cols);
+    explicit LiquidCrystal14S(ILcdDisplay& display, uint8_t cols);
 
     /// Init display
     void begin();
