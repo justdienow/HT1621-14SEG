@@ -1,0 +1,23 @@
+{
+    "name": "HT1621-14SEG",
+    "description": "Arduino library to work with a 14(+2) segment LCD from an Panasonic SC-HC20 stereo, via the HT1621 controller.",
+    "keywords": "ht1621, 14-segment, LCD, controller, panasonic, SC-HC20",
+    "authors": [
+        {
+            "name": "justdienow",
+            "maintainer": true
+        },
+        {
+            "name": "ipanin"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/justdienow/HT1621-14SEG"
+    },
+    "version": "1.0.0",
+    "frameworks": "Arduino",
+    "examples": [
+        "examples/*/*.ino"
+    ]
+}

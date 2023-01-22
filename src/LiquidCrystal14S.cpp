@@ -1,5 +1,5 @@
 /**
- * \file LiquidCrystal7S.cpp
+ * \file LiquidCrystal14S.cpp
  * \brief Implementation of an adaptation of LiquidCrystal library to deal with 7 segments LCD based on HT1621 chipset.
  * \author Enrico Formenti
  * \copyright BSD license, check the License page on the blog for more information. All this text must be
@@ -8,23 +8,23 @@
  *  See macduino.blogspot.com for more details.
  */
 
-#include "LiquidCrystal7S.h"
+#include "LiquidCrystal14S.h"
 
-LiquidCrystal7S::LiquidCrystal7S(ILcdDisplay& display, uint8_t cols)
+LiquidCrystal14S::LiquidCrystal14S(ILcdDisplay& display, uint8_t cols)
 : _display(display), _numCols(cols), _autoscroll(false), _cursorCol(0){
 }
 
-void LiquidCrystal7S::begin() {
+void LiquidCrystal14S::begin() {
     _display.begin();
     clear();
 }
 
-void LiquidCrystal7S::clear() {
+void LiquidCrystal14S::clear() {
     _display.clear();
     home();
 }
 
-void LiquidCrystal7S::scrollDisplayLeft() {
+void LiquidCrystal14S::scrollDisplayLeft() {
     _cursorCol = (_cursorCol + _numCols - 1) % _numCols; // move cursor left circular
 
     // rotate row
@@ -38,7 +38,7 @@ void LiquidCrystal7S::scrollDisplayLeft() {
     _display.write(lastInCurrentRow, savedFirst);
 }
 
-void LiquidCrystal7S::scrollDisplayRight() {
+void LiquidCrystal14S::scrollDisplayRight() {
     _cursorCol = (_cursorCol + 1) % _numCols; // move cursor right circular
 
     // rotate row
@@ -52,7 +52,7 @@ void LiquidCrystal7S::scrollDisplayRight() {
     _display.write(0, saveLast);
 }
 
-size_t LiquidCrystal7S::write(uint8_t value) {
+size_t LiquidCrystal14S::write(uint8_t value) {
     if (_autoscroll && _cursorCol >= _numCols) { // scroll if cursor out of bound
         scrollDisplayLeft();
     }
@@ -67,7 +67,7 @@ size_t LiquidCrystal7S::write(uint8_t value) {
     return 1;
 }
 
-size_t LiquidCrystal7S::write(const uint8_t str[]) {
+size_t LiquidCrystal14S::write(const uint8_t str[]) {
     size_t i = 0;
 
     while(str[i]) {

@@ -73,9 +73,7 @@
 #if ARDUINO >= 100
 #include "Arduino.h"
 #else
-
 #include "WProgram.h"
-
 #endif
 
 #define TAKE_CS()    digitalWrite(_CS_pin, LOW)
